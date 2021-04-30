@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "http://it-boyer.github.io/"
+baseurl = "http://it-boyer.github.io/iMe"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "almeida-cv"
