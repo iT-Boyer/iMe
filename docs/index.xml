@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>John Doe Resume</title>
-    <link>https://it-boyer.github.io/iMe/docs/</link>
+    <link>http://it-boyer.github.io/iMe/docs/</link>
     <description>Recent content on John Doe Resume</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://it-boyer.github.io/iMe/docs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://it-boyer.github.io/iMe/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

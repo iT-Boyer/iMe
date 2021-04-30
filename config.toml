@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "https://it-boyer.github.io/iMe/docs"
+baseurl = "http://it-boyer.github.io/iMe/docs"
 languageCode = "en-us"
 title = "John Doe Resume"
 theme = "hugo-orbit-theme"
