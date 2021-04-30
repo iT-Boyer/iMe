@@ -1,10 +1,16 @@
 # Page settings
 
-baseurl = "http://example.org/"
+baseurl = "http://it-boyer.github.io/iMe/"
 languageCode = "en-us"
 title = "John Doe Resume"
 theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
+
+# 发布目录，指向github的本地仓库
+publishdir = "docs"
+
+# 编译草稿，使用改参数保证hugo server即使没有加`--buildDrafts`，也能访问draft=true的md
+buildDrafts = true
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
