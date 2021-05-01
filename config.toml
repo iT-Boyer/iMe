@@ -47,20 +47,20 @@ disable404 = true
         [[params.contact.list]]
         class = "email"
         icon = "fa-envelope"
-        url = "mailto: yourname@email.com"
-        title = "john.doe@website.com"
+        url = "mailto: itboyer@qq.com"
+        title = "iTBoyer@qq.com"
 
         [[params.contact.list]]
         class = "phone"
         icon = "fa-phone"
-        url = "tel:+1234567890"
-        title = "+1234567890"
+        url = "tel:+13522834108"
+        title = "+135228***8"
 
         [[params.contact.list]]
         class = "website"
         icon = "fa-globe"
-        url = "//portfoliosite.com"
-        title = "portfoliosite.com"
+        url = "//it-boyer.github.io"
+        title = "iTBoyer.com"
 
         [[params.contact.list]]
         class = "linkedin"
@@ -71,8 +71,8 @@ disable404 = true
         [[params.contact.list]]
         class = "github"
         icon = "fa-github"
-        url = "//github.com/username"
-        title = "github.com/username"
+        url = "//github.com/iT-Boyer"
+        title = "github.com/iT-Boyer"
 
         [[params.contact.list]]
         class = "twitter"
@@ -83,48 +83,44 @@ disable404 = true
     # Education section
     [params.education]
         enable = true
-        title = "Education"
+        title = "教育"
 
         [[params.education.list]]
-        degree = "MSc in Computer Science"
-        college = "University of London"
-        dates = "2006 - 2010"
+        degree = "计算机网络-本科"
+        college = "郑州轻工业学院"
+        dates = "2008 - 2011"
 
         [[params.education.list]]
-        degree = "BSc in Applied Mathematics"
-        college = "Bristol University"
-        dates = "2007 - 2011"
+        degree = "移动端开发"
+        college = "金和网络"
+        dates = "2017 - 2021"
 
     # Languages section
     [params.language]
         enable = true
-        title = "Languages"
+        title = "语言"
 
         [[params.language.list]]
-        language = "English"
+        language = "汉语"
         level = "Native"
 
         [[params.language.list]]
-        language = "French"
-        level = "Professional"
-
-        [[params.language.list]]
-        language = "Russian"
-        level = "Professional"
+        language = "English"
+        level = "4级"
 
     # Interests section
     [params.interests]
         enable = true
-        title = "Interests"
+        title = "兴趣爱好"
 
         [[params.interests.list]]
-        interest = "Climbing"
+        interest = "羽毛球/骑行/轮滑"
 
         [[params.interests.list]]
-        interest = "Snowboarding"
+        interest = "爬山"
 
         [[params.interests.list]]
-        interest = "Cooking"
+        interest = "读书"
 
 # Main body sections
 
