@@ -16,11 +16,6 @@ disableRSS = true
 disableSitemap = true
 disable404 = true
 
-# Do not build files for websites. Need them? Set to false
-disableRSS = true
-disableSitemap = true
-disable404 = true
-
 [params]
 
 # Meta
