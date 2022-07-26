@@ -6,6 +6,9 @@ title = "求职简历"
 theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
+# 发布目录，指向github的本地仓库
+publishdir = "docs"
+
 defaultContentLanguage = "zh"
 
 # Do not build files for websites. Need them? Set to false
