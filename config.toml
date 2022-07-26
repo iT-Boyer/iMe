@@ -7,7 +7,7 @@ theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
 # 发布目录，指向github的本地仓库
-publishdir = "docs"
+# publishdir = "docs"
 
 defaultContentLanguage = "zh"
 
