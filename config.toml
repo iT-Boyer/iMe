@@ -19,7 +19,7 @@ disable404 = true
 [params]
 
 # Meta
-    description = "Hugo Responsive Resume/CV Theme for Developers"
+    description = "iOS开发"
     author = "布衣男儿"
 
 # Theme styles
