@@ -1,6 +1,3 @@
 [submodule "themes/hugo-orbit-theme"]
 	path = themes/hugo-orbit-theme
 	url = https://github.com/it-boyer/hugo-orbit-theme
-[submodule "themes/almeida-cv"]
-	path = themes/almeida-cv
-	url = https://github.com/it-boyer/almeida-cv
