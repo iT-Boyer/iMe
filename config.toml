@@ -2,22 +2,215 @@
 
 baseurl = "https://it-boyer.github.io/iMe"
 languageCode = "en-us"
-defaultContentLanguage = "en"
-theme = "almeida-cv"
-title = "Example - CV"
+title = "求职简历"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
 
-# 发布目录，指向github的本地仓库
-publishdir = "docs"
+defaultContentLanguage = "zh"
 
-# 编译草稿，使用改参数保证hugo server即使没有加`--buildDrafts`，也能访问draft=true的md
-buildDrafts = true
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
 
 [params]
-colorDark = "#666"
-colorLight = "#fff"
-colorPageBackground = "#ddd"
-colorPrimary = "#e3bfb8"
-colorPrimaryText = "#fff"
-colorRightColumnBackground = "#f5f5f5"
-colorSecondary = "#aaa"
-pages = 1
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "布衣男儿"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "布衣男儿"
+        tagline = "iOS开发工程师"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: itboyer@qq.com"
+        title = "itboyer@qq.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:13522834108"
+        title = "13522834108"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "https://it-boyer.github.io"
+        title = "个人博客"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/it-boyer"
+        title = "github.com/it-boyer"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "郑州轻工业学院"
+        college = "本科"
+        dates = "2007 - 2011"
+
+        [[params.education.list]]
+        degree = "CMMI资质认证"
+        college = "项目经理"
+        dates = "2021 - 2022"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "汉语"
+        level = "母语"
+
+        [[params.language.list]]
+        language = "English"
+        level = "2"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "骑行"
+
+        [[params.interests.list]]
+        interest = "漂移板"
+
+        [[params.interests.list]]
+        interest = "烹饪"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "职业目标"
+        summary = "**我的职业生涯** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "工作经验"
+
+        [[params.jobs.list]]
+        position = "iOS项目leader"
+        dates = "2016 - 至今"
+        company = "北京金和软件股份有限公司"
+        details = "**职责描述** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+        [[params.jobs.list]]
+        position = "iOS研发工程师"
+        dates = "2013 - 2016"
+        company = "北京创世泰克科技有限公司"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+        [[params.jobs.list]]
+        position = "Java开发工程师"
+        dates = "2011 - 2013"
+        company = "北京鼎晟中天科技有限公司"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "项目经验"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[params.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[params.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[params.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[params.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[params.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "技能"
+
+        [[params.skills.list]]
+        skill = "Swift & Objective-C"
+        level = "98%"
+                
+        [[params.skills.list]]
+        skill = "Python"
+        level = "50%"
+
+        [[params.skills.list]]
+        skill = "Java"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Ruby on Rails"
+        level = "50%"
+
+        [[params.skills.list]]
+        skill = "Sketch & Photoshop"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
