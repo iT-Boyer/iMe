@@ -2,15 +2,19 @@
 
 baseurl = "https://it-boyer.github.io/iMe/"
 languageCode = "en-us"
-title = "John Doe Resume"
+title = "求职简历"
 theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
 # 发布目录，指向github的本地仓库
 publishdir = "docs"
 
-# 编译草稿，使用改参数保证hugo server即使没有加`--buildDrafts`，也能访问draft=true的md
-buildDrafts = true
+defaultContentLanguage = "zh"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
@@ -20,8 +24,8 @@ disable404 = true
 [params]
 
 # Meta
-    description = "Hugo Responsive Resume/CV Theme for Developers"
-    author = "Pavel Kanyshev"
+    description = "iOS开发"
+    author = "布衣男儿"
 
 # Theme styles
 
@@ -36,8 +40,8 @@ disable404 = true
 
     # Profile section
     [params.profile]
-        name = "John Doe"
-        tagline = "Full Stack Developer"
+       name = "布衣男儿"
+        tagline = "iOS开发工程师"
         avatar = "profile.png"
 
     # Contact section
@@ -53,32 +57,20 @@ disable404 = true
         [[params.contact.list]]
         class = "phone"
         icon = "fa-phone"
-        url = "tel:+13522834108"
+        url = "tel:13522834108"
         title = "+135228***8"
 
         [[params.contact.list]]
         class = "website"
         icon = "fa-globe"
-        url = "//it-boyer.github.io"
-        title = "iTBoyer.com"
-
-        [[params.contact.list]]
-        class = "linkedin"
-        icon = "fa-linkedin"
-        url = "//linkedin.com/in/johndoe"
-        title = "linkedin.com/in/johndoe"
+        url = "https://it-boyer.github.io"
+        title = "个人博客"
 
         [[params.contact.list]]
         class = "github"
         icon = "fa-github"
-        url = "//github.com/iT-Boyer"
-        title = "github.com/iT-Boyer"
-
-        [[params.contact.list]]
-        class = "twitter"
-        icon = "fa-twitter"
-        url = "//twitter.com/username"
-        title = "@twittername"
+        url = "//github.com/it-boyer"
+        title = "github.com/it-boyer"
 
     # Education section
     [params.education]
@@ -88,12 +80,17 @@ disable404 = true
         [[params.education.list]]
         degree = "计算机网络-本科"
         college = "郑州轻工业学院"
-        dates = "2008 - 2011"
+        dates = "2007 - 2011"
 
         [[params.education.list]]
         degree = "移动端开发"
         college = "金和网络"
         dates = "2017 - 2021"
+
+        [[params.education.list]]
+        degree = "CMMI资质认证"
+        college = "项目经理"
+        dates = "2021 - 2022"
 
     # Languages section
     [params.language]
@@ -114,13 +111,13 @@ disable404 = true
         title = "兴趣爱好"
 
         [[params.interests.list]]
-        interest = "羽毛球/骑行/轮滑"
+        interest = "骑行"
 
         [[params.interests.list]]
-        interest = "爬山"
+        interest = "漂移板"
 
         [[params.interests.list]]
-        interest = "读书"
+        interest = "烹饪"
 
 # Main body sections
 
@@ -130,38 +127,38 @@ disable404 = true
     [params.summary]
         enable = true
         icon = "fa-user"
-        title = "Career Profile"
-        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+        title = "职业目标"
+        summary = "**我的职业生涯** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
 
     # Experiences section
     [params.experiences]
         enable = true
         icon = "fa-briefcase"
-        title = "Experiences"
+        title = "工作经验"
 
         [[params.jobs.list]]
-        position = "Lead Developer"
-        dates = "2015 - Present"
-        company = "Startup Hubs, San Francisco"
-        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        position = "iOS项目leader"
+        dates = "2016 - 至今"
+        company = "北京金和软件股份有限公司"
+        details = "**职责描述** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
 
         [[params.jobs.list]]
-        position = "Senior Software Engineer"
-        dates = "2014 - 2015"
-        company = "Google, London"
+        position = "iOS研发工程师"
+        dates = "2013 - 2016"
+        company = "北京创世泰克科技有限公司"
         details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
 
         [[params.jobs.list]]
-        position = "UI Developer"
-        dates = "2012 - 2014"
-        company = "Amazon, London"
+        position = "Java开发工程师"
+        dates = "2011 - 2013"
+        company = "北京鼎晟中天科技有限公司"
         details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
 
     # Projects section
     [params.projects]
         enable = true
         icon = "fa-archive"
-        title = "Projects"
+        title = "项目经验"
         intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
 
         [[params.projects.list]]
@@ -193,27 +190,27 @@ disable404 = true
     [params.skills]
         enable = true
         icon = "fa-rocket"
-        title = "Skills & Proficiency"
+        title = "技能"
 
         [[params.skills.list]]
-        skill = "Python & Django"
+        skill = "Swift & Objective-C"
         level = "98%"
                 
         [[params.skills.list]]
-        skill = "Javascript & jQuery"
-        level = "98%"
+        skill = "Python"
+        level = "50%"
 
         [[params.skills.list]]
-        skill = "Angular"
-        level = "95%"
+        skill = "Java"
+        level = "70%"
 
         [[params.skills.list]]
         skill = "HTML5 & CSS"
-        level = "95%"
+        level = "70%"
 
         [[params.skills.list]]
         skill = "Ruby on Rails"
-        level = "75%"
+        level = "50%"
 
         [[params.skills.list]]
         skill = "Sketch & Photoshop"
